@@ -1,10 +1,28 @@
 import App from '../App'
+import Playstation from '../components/Pages/Playstation'
+import Games from '../components/Pages/Games'
+import Accessories from '../components/Pages/Accessories'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    children: [
+      {
+        index: true,
+        path: 'ps5',
+        element: <Playstation />,
+      },
+      {
+        path: 'games',
+        element: <Games />,
+      },
+      {
+        path: 'accessories',
+        element: <Accessories />,
+      },
+    ],
   },
 ])
 
