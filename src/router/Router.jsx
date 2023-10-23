@@ -11,7 +11,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: 'ps5',
         element: <Playstation />,
       },
       {
