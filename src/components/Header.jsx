@@ -19,7 +19,10 @@ function Header() {
 
   return (
     <>
-      <header className="container-fluid">
+      <header
+        style={{ backgroundColor: 'white' }}
+        className="container-fluid sticky-top shadow"
+      >
         <nav className="navbar navbar-expand">
           <div className="row align-items-center">
             <div className="col-12 col-md-4">
@@ -37,7 +40,7 @@ function Header() {
                   <small
                     ref={playstation}
                     onClick={() => setBackground(0)}
-                    className="rounded-pill px-3 py-1"
+                    className="rounded-pill px-2 py-1"
                     style={{ backgroundColor: BG_COLOR }}
                   >
                     Playstation 5
@@ -47,7 +50,7 @@ function Header() {
                   <small
                     ref={games}
                     onClick={() => setBackground(1)}
-                    className="rounded-pill px-3 py-1"
+                    className="rounded-pill px-2 py-1"
                   >
                     Games
                   </small>
@@ -56,7 +59,7 @@ function Header() {
                   <small
                     ref={accessories}
                     onClick={() => setBackground(2)}
-                    className="rounded-pill px-3 py-1"
+                    className="rounded-pill px-2 py-1"
                   >
                     Accessories
                   </small>
