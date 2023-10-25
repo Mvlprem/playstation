@@ -1,3 +1,4 @@
+import ps from '../../assets/images/ps-logo.svg'
 import banner from '../../assets/images/banner.webp'
 import accessories from '../../assets/images/accessories.webp'
 import dualsense from '../../assets/images/dualsense.webp'
@@ -11,7 +12,7 @@ function Accessories() {
     <>
       <main>
         {/* Header Section */}
-        <section style={{ backgroundImage: `url(${banner})` }}>
+        <section className="pb-3" style={{ backgroundImage: `url(${banner})` }}>
           <div className="container p-5 pb-2 text-center">
             <p className="display-5">PlayStation® accessories</p>
             <p className="fs-4 fw-light">
@@ -21,6 +22,65 @@ function Accessories() {
           </div>
           <div className="container px-5 pb-5">
             <img className="img-fluid" src={accessories} alt="Accessories" />
+          </div>
+
+          {/* Sign In btn */}
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#Modal"
+            className="btn btn-primary rounded-pill fw-bold d-block mx-auto"
+          >
+            Sign In
+          </button>
+
+          {/* Modal Sign In */}
+          <div className="modal modal-md" id="Modal">
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                {/* Header */}
+                <div className="modal-header bg-dark" data-bs-theme="dark">
+                  <h4 className="modal-title d-block mx-auto text-white fw-bold">
+                    SONY
+                  </h4>
+                  <button
+                    type="button"
+                    data-bs-dismiss="modal"
+                    className="btn-close ms-0"
+                  ></button>
+                </div>
+
+                {/* Body */}
+                <div className="modal-body p-0">
+                  <div className="bg-primary py-3 px-5">
+                    <img src={ps} alt="Playstation" className="img-fluid" />
+                  </div>
+                  <div className="pt-3 px-4">
+                    <small>
+                      Sign in to PlayStation with one of your Sony accounts.
+                    </small>
+                  </div>
+
+                  <form className="p-4">
+                    <input
+                      type="email"
+                      className="form-control mb-3"
+                      placeholder="Sign-In ID (Email Address)"
+                    />
+                    <input
+                      type="password"
+                      className="form-control mb-3"
+                      placeholder="Password"
+                    />
+                    <input type="checkbox" className="form-check-input" />
+                    <small className="ms-2">Remember me</small>
+                    <br />
+                    <button type="submit" className="btn btn-primary mt-3">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
