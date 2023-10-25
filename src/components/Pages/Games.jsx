@@ -1,14 +1,9 @@
 import styled from 'styled-components'
 import spiderman from '../../assets/images/spiderman.webp'
-import spidermanSM from '../../assets/images/spiderman-sm.webp'
 import callofduty from '../../assets/images/callofduty.webp'
-import callofdutySM from '../../assets/images/callofduty-sm.webp'
 import finalfantasy from '../../assets/images/finalfantasy.webp'
-import finalfantasySM from '../../assets/images/finalfantasy-sm.webp'
 import godofwar from '../../assets/images/godofwar.webp'
-import godofwarSM from '../../assets/images/godofwar-sm.webp'
 import helldivers from '../../assets/images/helldivers.webp'
-import helldiversSM from '../../assets/images/helldivers-sm.webp'
 import witcher from '../../assets/images/witcher.jpg'
 import starfield from '../../assets/images/starfield.jpeg'
 import cyberpunk from '../../assets/images/cyberpunk.jpg'
@@ -16,7 +11,7 @@ import cyberpunk from '../../assets/images/cyberpunk.jpg'
 function Games() {
   return (
     <>
-      <main>
+      <main className="bg-light">
         {/* Popular Games */}
         <section>
           <p className="px-3 py-5 display-6 text-center">
@@ -28,10 +23,9 @@ function Games() {
           {/* Spiderman */}
           <div className="container">
             <img className="img-fluid" src={spiderman} alt="spiderman" />
-            <Img
-              className="img-fluid rounded"
-              src={spidermanSM}
-              alt="spiderman"
+            <Iframe
+              className="rounded"
+              src="https://www.youtube.com/embed/nq1M_Wc4FIc?playlist=nq1M_Wc4FIc&autoplay=0&mute=1&controls=0"
             />
             <div className="container pb-5 px-5">
               <p className="fs-3">Marvel Spider-Man 2</p>
@@ -49,11 +43,10 @@ function Games() {
 
           {/* God of war */}
           <div className="container">
-            <img className="img-fluid" src={godofwar} alt="spiderman" />
-            <Img
-              className="img-fluid rounded"
-              src={godofwarSM}
-              alt="spiderman"
+            <img className="img-fluid" src={godofwar} alt="God of war" />
+            <Iframe
+              className="rounded"
+              src="https://www.youtube.com/embed/hfJ4Km46A-0?playlist=hfJ4Km46A-0&autoplay=0&mute=1&controls=0"
             />
             <div className="container pb-5 px-5">
               <p className="fs-3">God of War™ Ragnarök</p>
@@ -73,11 +66,10 @@ function Games() {
 
           {/* Call of duty */}
           <div className="container">
-            <img className="img-fluid" src={callofduty} alt="spiderman" />
-            <Img
-              className="img-fluid rounded"
-              src={callofdutySM}
-              alt="spiderman"
+            <img className="img-fluid" src={callofduty} alt="Call of duty" />
+            <Iframe
+              className="rounded"
+              src="https://www.youtube.com/embed/i3IsLrPeZG8?playlist=i3IsLrPeZG8&autoplay=0&mute=1&controls=0"
             />
             <div className="container pb-5 px-5">
               <p className="fs-3">Call of Duty: Modern Warfare III</p>
@@ -95,11 +87,10 @@ function Games() {
 
           {/* Final fantasy */}
           <div className="container">
-            <img className="img-fluid" src={finalfantasy} alt="spiderman" />
-            <Img
-              className="img-fluid rounded"
-              src={finalfantasySM}
-              alt="spiderman"
+            <img className="img-fluid" src={finalfantasy} alt="Final fantasy" />
+            <Iframe
+              className="rounded"
+              src="https://www.youtube.com/embed/aPT26Dd3OzE?playlist=aPT26Dd3OzE&autoplay=0&mute=1&controls=0"
             />
             <div className="container pb-5 px-5">
               <p className="fs-3">Final Fantasy XVI</p>
@@ -117,11 +108,10 @@ function Games() {
 
           {/* Helldivers */}
           <div className="container">
-            <img className="img-fluid" src={helldivers} alt="spiderman" />
-            <Img
-              className="img-fluid rounded"
-              src={helldiversSM}
-              alt="spiderman"
+            <img className="img-fluid" src={helldivers} alt="Helldivers" />
+            <Iframe
+              className="rounded"
+              src="https://www.youtube.com/embed/rE7KTE28HrA?playlist=rE7KTE28HrA&autoplay=0&mute=1&controls=0"
             />
             <div className="container pb-5 px-5">
               <p className="fs-3">Helldivers™ 2</p>
@@ -348,9 +338,10 @@ function Games() {
   )
 }
 
-const Img = styled.img`
+const Iframe = styled.iframe`
   position: relative;
-  width: 250px;
+  width: 270px;
+  height: auto;
   top: -70px;
   left: 50px;
 `
