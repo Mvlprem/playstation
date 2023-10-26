@@ -1,6 +1,6 @@
-<div style="font-size:24px; text-align: center;">Playstation Clone</div>
+<div align="center">Playstation 5 Clone</div>
 
-<div style="font-size:16px; text-align: center;">
+<div align="center">
 <a href="https://mvl-playstation.netlify.app/">View Demo</a>
 </div>
 
