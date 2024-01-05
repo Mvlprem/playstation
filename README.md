@@ -4,6 +4,15 @@ This project focuses on to create a responsive Playstation 5 website format as c
 
 ### Demo : [Playstation](https://prem-playstation.netlify.app/)
 
+### Getting started
+
+```
+git clone https://github.com/Mvlprem/playstation.git
+cd playstation
+npm install
+npm run dev
+```
+
 ### Built with
 
 ![React.js](https://img.shields.io/badge/React.js-black?style=flat&logo=react&logoColor=61DAFB)
