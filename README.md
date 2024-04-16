@@ -2,16 +2,29 @@
 
 This project focuses on to create a responsive Playstation 5 website format as close as possible.
 
-### Demo : [Playstation](https://prem-playstation.netlify.app/)
+#### Demo : [Playstation](https://prem-playstation.netlify.app/)
 
 ### Getting started
 
-```
-git clone https://github.com/Mvlprem/playstation.git
-cd playstation
-npm install
-npm run dev
-```
+To get this project up and running locally on your computer:
+
+1. Clone this repository
+
+   ```bash
+   git clone https://github.com/Mvlprem/playstation.git
+   ```
+
+2. Install the required packages in the root of your clone of this repo
+
+   ```bash
+   npm install
+   ```
+
+3. Run the server, using the below command
+
+   ```bash
+   npm run dev
+   ```
 
 ### Built with
 
